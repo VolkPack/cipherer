@@ -14,18 +14,20 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="@dimen/ceaser_textbox_H"
+        android:layout_height="@dimen/textbox_H"
         android:id="@+id/ceaser_input"
         android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:textSize="@dimen/in_out"
         android:background="@color/background"
-        android:textColor="@color/ceaserText"
-        android:nestedScrollingEnabled="true"/>
+        android:textColor="@color/ceaserText"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/shift_text"
         android:textStyle="bold"
+        android:paddingRight="@dimen/shift_text_padding"
         android:textColor="@color/generic"
         android:layout_below="@+id/ceaser_buttons"
         android:gravity="bottom"
@@ -40,17 +42,20 @@
         android:layout_height="40sp"
         android:id="@+id/shift_input"
         android:inputType="number"
+        android:gravity="center"
         android:text="@string/default_shift"
         android:layout_above="@+id/output"
         android:layout_toRightOf="@+id/shift_text"
         android:layout_toEndOf="@+id/shift_text" />
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/textbox_H"
         android:layout_below="@+id/shift_text"
         android:paddingTop="@dimen/Links_padding"
         android:background="@color/background"
+        android:scrollbars="vertical"
         android:id="@+id/output"
+        android:textSize="@dimen/in_out"
         android:textColor="@color/ceaserText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -91,7 +96,7 @@
             android:layout_weight="25"
             android:text="@string/decode_button"
             android:layout_gravity="center"
-            android:onClick="DecodeText"/>
+            android:onClick="decodeText"/>
 
     </LinearLayout>
 

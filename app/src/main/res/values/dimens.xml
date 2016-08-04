@@ -3,8 +3,10 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="Links_padding">25dp</dimen>
-    <dimen name="title_text_size">35sp</dimen>
-    <dimen name="links_size">20sp</dimen>
-    <dimen name="ceaser_textbox_H">200sp</dimen>
-    <dimen name="ceaser_padding">30sp</dimen>
+    <dimen name="title_text_size">35dp</dimen>
+    <dimen name="links_size">25dp</dimen>
+    <dimen name="textbox_H">150dp</dimen>
+    <dimen name="ceaser_padding">30dp</dimen>
+    <dimen name="shift_text_padding">20dp</dimen>
+    <dimen name="in_out"> 25dp</dimen>
 </resources>

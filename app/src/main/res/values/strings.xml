@@ -3,6 +3,7 @@
 
     <string name="main_screen_Title">Pick A Cipher</string>
     <string name="ceaser_link">Ceaser Cipher</string>
+    <string name="ceaser_title">Ceaser Shift</string>
 
     <string name="input">Input Text</string>
     <string name="encode_title">Encoded</string>

@@ -26,6 +26,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ceaser"
+        android:textColor="@color/generic"
+        android:textStyle="bold"
         android:text="@string/ceaser_link"
         android:layout_gravity="center_horizontal"
         android:paddingTop="@dimen/Links_padding"
