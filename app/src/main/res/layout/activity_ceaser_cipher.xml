@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CeaserCipher">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ceaser_textbox_H"
+        android:id="@+id/ceaser_input"
+        android:inputType="textMultiLine"
+        android:background="@color/background"
+        android:textColor="@color/ceaserText"
+        android:nestedScrollingEnabled="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shift_text"
+        android:textStyle="bold"
+        android:textColor="@color/generic"
+        android:layout_below="@+id/ceaser_buttons"
+        android:gravity="bottom"
+        android:textSize="@dimen/links_size"
+        android:text="@string/shift"
+        android:paddingTop="@dimen/ceaser_padding"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"/>
+    <EditText
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:id="@+id/shift_input"
+        android:inputType="number"
+        android:text="@string/default_shift"
+        android:layout_above="@+id/output"
+        android:layout_toRightOf="@+id/shift_text"
+        android:layout_toEndOf="@+id/shift_text" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shift_text"
+        android:paddingTop="@dimen/Links_padding"
+        android:background="@color/background"
+        android:id="@+id/output"
+        android:textColor="@color/ceaserText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ceaser_buttons"
+        android:layout_below="@+id/ceaser_input"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/encoode"
+            android:layout_weight="25"
+            android:text="@string/encode_button"
+            android:layout_gravity="center"
+            android:onClick="EncodeText"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear_ceaser"
+            android:layout_weight="25"
+            android:text="@string/clear"
+            android:layout_gravity="center"
+            android:onClick="ceaserClear"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/copy_ceaser"
+            android:layout_weight="25"
+            android:text="@string/copy_text"
+            android:layout_gravity="center"
+            android:onClick="ceaserCopy"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/decode"
+            android:layout_weight="25"
+            android:text="@string/decode_button"
+            android:layout_gravity="center"
+            android:onClick="DecodeText"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

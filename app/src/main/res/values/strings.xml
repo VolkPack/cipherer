@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Cypher</string>
+
+    <string name="main_screen_Title">Pick A Cipher</string>
+    <string name="ceaser_link">Ceaser Cipher</string>
+
+    <string name="input">Input Text</string>
+    <string name="encode_title">Encoded</string>
+    <string name="decode_title">Decoded</string>
+    <string name="shift">Shift</string>
+    <string name="encode_button">Encode</string>
+    <string name="decode_button">Decode</string>
+    <string name="copy_text">Copy</string>
+    <string name="clear">Clear</string>
+    <string name="noShift">Please Enter Shift</string>
+    <string name="default_shift">0</string>
+
+
+
+</resources>
